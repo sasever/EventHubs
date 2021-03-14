@@ -14,12 +14,14 @@ Once we create  above objects we can start working on our client VM.
 For the client VM we have 4  python notebooks:
 
 Producers:
-    1. [Producer with Event Hub Native Python SDK](Notebooks/ProducerEhubNative.ipynb)
-    2. [Producer with Confluent Kafka Python package](Notebooks/KafkaProducerEhub.ipynb)
+
+   1. [Producer with Event Hub Native Python SDK](Notebooks/ProducerEhubNative.ipynb)
+   2. [Producer with Confluent Kafka Python package](Notebooks/KafkaProducerEhub.ipynb)
 
 Consumers:
-    1. [Consumer with Event Hub Native Python SDK](Notebooks/ConsumerEhubNative.ipynb)
-    2. [Consumer with Confluent Kafka Python package](Notebooks/KafkaConsumerEhub.ipynb)
+
+   1. [Consumer with Event Hub Native Python SDK](Notebooks/ConsumerEhubNative.ipynb)
+   2. [Consumer with Confluent Kafka Python package](Notebooks/KafkaConsumerEhub.ipynb)
 
 There are some prerequisites to be able to run our Kafka producer and consumer. Using Event Hubs as Kafka requires SSL certificates and SSL software to be present in the client environment.Also [confluent-kafka python package](https://docs.confluent.io/clients-confluent-kafka-python/current/overview.html) uses  [librdkafka](https://github.com/edenhill/librdkafka) . **librdkafka ** is a C library implementation of the Apache Kafka protocol, providing Producer, Consumer and Admin clients with ssl support, which we require for confluent-kafka package work with event hubs.
 
