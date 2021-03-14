@@ -25,7 +25,7 @@ Consumers:
  
 ## IMPORTANT!!:
 
-There are some prerequisites to be able to run our Kafka producer and consumer. Using Event Hubs as Kafka requires SSL certificates and SSL software to be present in the client environment. Also [confluent-kafka python package](https://docs.confluent.io/clients-confluent-kafka-python/current/overview.html) uses  [librdkafka](https://github.com/edenhill/librdkafka) . **librdkafka ** is a C library implementation of the Apache Kafka protocol, providing Producer, Consumer and Admin clients with ssl support, which we require for confluent-kafka package work with event hubs.
+There are some prerequisites to be able to run our Kafka producer and consumer. Using Event Hubs as Kafka requires SSL certificates and SSL software to be present in the client environment. Also [confluent-kafka python package](https://docs.confluent.io/clients-confluent-kafka-python/current/overview.html) uses  [librdkafka](https://github.com/edenhill/librdkafka) . **librdkafka** is a C library implementation of the Apache Kafka protocol, providing Producer, Consumer and Admin clients with ssl support, which we require for confluent-kafka package work with event hubs.
 
 1. We need to have valid SSL certificate.
     * You can use [Mozilla CA Certificates](https://curl.se/docs/caextract.html) for this purpose.
