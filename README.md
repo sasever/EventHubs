@@ -9,7 +9,7 @@ In this scenario we will be creating below objects:
 4. [An Event Hubs Name Space & an EventHub under it](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
 5. [A private link that is connecting the clientVMs subnet to Event Hubs Namespace](https://docs.microsoft.com/en-us/azure/event-hubs/private-link-service)
 
-Once we create  above objects we can start working on our client VM.
+Once we create  above objects we can start working on our client VM. We specifically used Data Science VMs since it comes preinstalled with Jupyter notebooks and python which our client appications will be executed with.
 
 For the client VM we have 4  python notebooks:
 
@@ -22,6 +22,8 @@ Consumers:
 
    1. [Consumer with Event Hub Native Python SDK](Notebooks/ConsumerEhubNative.ipynb)
    2. [Consumer with Confluent Kafka Python package](Notebooks/KafkaConsumerEhub.ipynb)
+ 
+## IMPORTANT!!:
 
 There are some prerequisites to be able to run our Kafka producer and consumer. Using Event Hubs as Kafka requires SSL certificates and SSL software to be present in the client environment. Also [confluent-kafka python package](https://docs.confluent.io/clients-confluent-kafka-python/current/overview.html) uses  [librdkafka](https://github.com/edenhill/librdkafka) . **librdkafka ** is a C library implementation of the Apache Kafka protocol, providing Producer, Consumer and Admin clients with ssl support, which we require for confluent-kafka package work with event hubs.
 
@@ -47,7 +49,7 @@ There are some prerequisites to be able to run our Kafka producer and consumer. 
         .\vcpkg\vcpkg install librdkafka
         ```
 
-Now you are Ready to Run the Consumers and producers.
+Now you are Ready to Run the Kafka Consumer and Producer.
 
 
 
