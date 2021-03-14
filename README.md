@@ -3,7 +3,7 @@
 In this scenario we will be creating below objects:
 
 1. [A resource group that will contain all our hack objects](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
-2. [A Virtual Network that will have the  a Client VM subnet](
+2. [A Virtual Network that will have the Client VM subnet](
      https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 3. [A Data Science Virtual Machine for Windows 2019 that will be hosting our client applications](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/provision-vm)
 4. [An Event Hubs Name Space & an EventHub under it](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
